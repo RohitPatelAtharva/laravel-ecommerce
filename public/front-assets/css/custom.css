@@ -1,0 +1,77 @@
+.product-name {
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Limit the number of lines to 2 */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Add ellipsis for overflow text */
+    height: 3em; /* Set a fixed height for the container */
+    line-height: 1.5em; /* Adjust line height to vertically center the ellipsis */
+}
+
+.product-name:hover {
+    /* Add any additional hover styles here */
+}
+.tab-pane {
+    max-height: 200px; /* Set maximum height for the tab content */
+    overflow-y: auto; /* Add vertical scrollbar if content exceeds the height */
+}
+
+.tab-pane p {
+    margin-bottom: 10px; /* Add spacing between paragraphs */
+}
+
+.tab-pane.overflow-hidden {
+    max-height: none; /* Remove maximum height for the active tab to show full content */
+    overflow-y: visible; /* Allow overflow for the active tab */
+}
+
+.tab-pane.overflow-hidden p:last-child {
+    margin-bottom: 0; /* Remove margin for the last paragraph to avoid unnecessary space */
+}
+ 
+        :root{
+            --primary-color:#ffc222;
+            --secondry-color:#00a149;
+            --white-color:#fff;
+            --text-color:#fcfafa;
+            --black-color:#1E1D23;
+            --primary-font:'sans -serif';
+            --secondry-font:'Quicksant','sans -seri';
+        }
+        .newsletter .form-control{
+            height: 3.225rem;
+            padding: 0 1.25rem;
+            font-size: 0.875rem;
+            width: 100%;
+            border-radius: 0%;
+            background: transparent;
+            border: 0.1875rem solid var(--white-color);
+            color: var(--black-color);
+            font-weight: 700;
+          }
+          .newsletter .main-btn{
+            height: 3.225rem;
+            padding: 0 1.25rem;
+            font-size: 0.875rem;
+            border-radius: 0;
+            background-color: var(--white-color);
+            border: 0.1875 solid var(--white-color);
+            color: var(--black-color);
+            font-weight: 700;
+          }
+          .newsletter:hover .form-control{
+            border: 0.1875rem solid var(--primary-color);
+            color: var(--black-color);
+          }
+          .newsletter:hover .main-btn{
+            background: var(--primary-color);
+            border: 0.1875rem solid var(--primary-color);
+        
+          }
+          .newslette .form-control:hover,
+          .newslette .form-control:focus{
+            outline: none;
+            box-shadow: none;
+            border-color: var(--primary-color);
+          }
+    
